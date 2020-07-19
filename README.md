@@ -15,7 +15,7 @@
     * install the packages your project uses
         * for example `npm install express --save` or `npm install express --save --save-exact`
         * alternatively if you got your project from a cloned repo, you can install whatever dependencies the repo author declared in the `package.json` by just running `npm install`
-    * create a `Procfile` with `web: node my_entry_point.js` inside it. this will ask heroku to connect your node instance to the web, otherwise internet connections would get blocked
+    * create a `Procfile` with `web: node index.js` inside it. this will ask heroku to connect your node instance to the web, otherwise internet connections would get blocked
 3. login to heroku using `heroku login`
     * you should have registered and verified a heroku account by now. you get ~1000 free monthly hours in a small virtualized 512MB memory server called a `dyno`. this is enough for running a small app 24/7, or multiple apps with less uptime. see [memory details](https://devcenter.heroku.com/articles/node-memory-use) for adjusting values according to your needs. the disk is ephemeral, it shouldn't persist between restarts which will happen when your app has no activity for ~30 minutes
 4. create and configure a heroku remote using `heroku create`

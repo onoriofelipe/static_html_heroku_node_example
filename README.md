@@ -19,7 +19,7 @@
 3. login to heroku using `heroku login`
     * you should have registered and verified a heroku account by now. you get ~1000 free monthly hours in a small virtualized 512MB memory server called a `dyno`. this is enough for running a small app 24/7, or multiple apps with less uptime. see [memory details](https://devcenter.heroku.com/articles/node-memory-use) for adjusting values according to your needs. the disk is ephemeral, it shouldn't persist between restarts which will happen when your app has no activity for ~30 minutes
 4. create and configure a heroku remote using `heroku create`
-5. push to heroku using `git push heroku master`
+5. push to heroku using `git push heroku master` (or `git push heroku mybranch` if you're using the `mybranch` branch instead of the `master` branch, or maybe you could push from a github repo directly to the heroku remote, or anything else you could imagine)
     * alternatively instead of pushing you could test the page locally using `heroku local web` and you would get the server running locally on `http://localhost:<your_designated_port_here>`, with the port specified in an environment variable `PORT` within the `.env` file
 
 resulting example: [https://polar-journey-49175.herokuapp.com/](https://polar-journey-49175.herokuapp.com/)
